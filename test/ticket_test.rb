@@ -22,7 +22,7 @@ class Konbikol::TicketTest < Minitest::Test
 
   DYNAMIC_LINES = %w(DTSTAMP UID)
 
-  # Some lines are dynamically changed each time you generate a ticket.
+  # Some lines in the ICS file are different each time you generate an event with icalendar.
   def sanitize_ical(ical)
     ical.lines
       .reject { |line| DYNAMIC_LINES.any? { |prefix| line.start_with?(prefix) } }
