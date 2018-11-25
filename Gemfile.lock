@@ -1,0 +1,44 @@
+PATH
+  remote: .
+  specs:
+    konbikol (0.1.0)
+      icalendar (~> 2.5.1)
+      pdf-reader (~> 2.1.0)
+      tzinfo (~> 1.2.5)
+      unidecoder (~> 1.1.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    Ascii85 (1.0.3)
+    afm (0.2.2)
+    hashery (2.1.2)
+    icalendar (2.5.1)
+      ice_cube (~> 0.16)
+    ice_cube (0.16.3)
+    minitest (5.11.3)
+    pdf-reader (2.1.0)
+      Ascii85 (~> 1.0.0)
+      afm (~> 0.2.1)
+      hashery (~> 2.0)
+      ruby-rc4
+      ttfunk
+    rake (10.5.0)
+    ruby-rc4 (0.1.5)
+    thread_safe (0.3.6)
+    ttfunk (1.5.1)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    unidecoder (1.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  konbikol!
+  minitest (~> 5.0)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.16.6

@@ -1,0 +1,71 @@
+              "PKP Intercity"         BILET INTERNETOWY                          NORMAL. : 1
+              Spółka Akcyjna                                           OF: 1     ULG. :   X : X
+
+Przewoźnik: PKP IC
+                                       E-Wcześniej: 1xNormal
+
+
+
+
+ ¦ ¸         Od/From                            Do/To                             ¦ ¸         KL./CL.
+
+ 04.11 19:21 Ostrzeszów                         Kraków Gł.                       04.11 22:49    2
+  *      *   *                                  *                                  *     *      *
+PRZEZ: Kępno * Olesno Śląskie
+
+
+                                                                                 SUMA PLN: 48,00 zł
+
+
+xxxxxxxxxxxx                                 Nr transakcji:        xxxxxxxxxxx            (xxx) xxxx
+
+Informacje o podróży:
+Stacja             Data Godzina     /Wagon  Km   Nr miejsca (o-okno ś-środek k-korytarz) Suma PLN
+Ostrzeszów        04.11   19:21  TLK 73100  292  35 o                                      48,00 zł
+Kraków Gł.        04.11   22:49      13          1 m. do siedzenia; wagon z przedziałami
+
+
+
+                                                                        rPodróżny: xxxxx xxxxxxx
+
+
+
+
+Informacja o cenie     PTU   Suma PLN Płatność: przelewem
+Opłata za przejazd:     8%      48,00 Zapłacono i wystawiono dnia:                                xxx
+                                      2018-10-21 13:52:29(11111111)
+
+
+Ogółem PLN:                     48,00
+
+
+
+
+
+Bilet internetowy jest biletem imiennym i jest ważny:
+a) wraz z dokumentem ze zdjęciem potwierdzającym tożsamość Podróżnego,
+b) tylko w dniu, relacji, pociągu, wagonie i na miejsce na nim oznaczone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Zwrotu należności za niewykorzystany bilet dokonuje się na podstawie wniosku
+złożonego przez płatnika w wyznaczonych przez 'PKP Intercity' S.A. punktach, z
+wyjątkiem należności zwracanych automatycznie na zasadach określonych w
+Regulaminie e-IC.                                                        73100
+
+Niniejszy bilet internetowy nie jest fakturą VAT.
+
+
+dokładne sprawdzanie rozkładu jazdy pociągów przed podróżą., uprzejmie prosimy o
+Data wydruku: 2018-11-02 14:37:36

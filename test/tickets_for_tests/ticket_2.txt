@@ -1,0 +1,72 @@
+              "PKP Intercity"          BILET INTERNETOWY                          NORMAL. : 1
+              Spółka Akcyjna                                            OF: 1     ULG. :   X : X
+
+Przewoźnik: PKP IC
+                                       C-Wcześniej: 1xNormal
+
+
+
+
+ ¦ ¸         Od/From                             Do/To                             ¦ ¸         KL./CL.
+
+ 06.12 15:51 Kraków Gł.                          Sopot                            06.12 21:28    2
+  *      *   *                                   *                                  *     *      *
+PRZEZ: Warszawa Zach. * Iława Gł.
+
+
+
+                                                                                  SUMA PLN: 139,30 zł
+
+xxxxxxxxxxxx                                  Nr transakcji:        xxxxxxxxxxx             (xx) xxxx
+
+Informacje o podróży:
+Stacja             Data Godzina     /Wagon   Km   Nr miejsca (o-okno ś-środek k-korytarz) Suma PLN
+
+Kraków Gł.         06.12  15:51   EIP 3500  632   46 o                                     139,30 zł
+Sopot              06.12  21:28      7            1 m. do siedzenia; strefa ciszy
+
+
+Bilet uprawnia w dniu ważności do przejazdu do st. Kraków Gł./Pł.. W poc.k9AP IC (oprócz EIP),
+wybranymi poc. KMŁ (w wybranych terminach), REGIO, tramwajami ZIKiT bez dodaPodróżny: xxxxxxxxx. na intercity.pl
+                                                                                xxxxxxxxxxxx
+
+
+Informacja o cenie     PTU   Suma PLN Płatność: kartą
+Opłata za przejazd:     8%     139,30 Zapłacono i wystawiono dnia:                                 xxx
+                                       2018-11-12 15:08:09(11111111)
+
+
+
+Ogółem PLN:                    139,30
+
+
+
+
+
+Bilet internetowy jest biletem imiennym i jest ważny:
+a) wraz z dokumentem ze zdjęciem potwierdzającym tożsamość Podróżnego,
+b) tylko w dniu, relacji, pociągu, wagonie i na miejsce na nim oznaczone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Zwrotu należności za niewykorzystany bilet dokonuje się na podstawie wniosku
+złożonego przez płatnika w wyznaczonych przez 'PKP Intercity' S.A. punktach, z
+wyjątkiem należności zwracanych automatycznie na zasadach określonych w  3500
+Regulaminie e-IC.
+
+Niniejszy bilet internetowy nie jest fakturą VAT.
+
+
+dokładne sprawdzanie rozkładu jazdy pociągów przed podróżą., uprzejmie prosimy o
+Data wydruku: 2018-11-12 15:09:35

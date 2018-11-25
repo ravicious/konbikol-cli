@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "konbikol"
+require "mkmf"
+
+# Make sure `find_executable` doesn't log anything.
+module MakeMakefile::Logging
+  @logfile = File::NULL
+  @quiet = true
+end
+
+if ARGF.filename == '-'
+  puts "Usage: konbikol file.pdf"
+  return
+end
+
+ticket = Konbikol::Converter.new.convert_ticket_to_event ARGF.file
+path = File.join(Etc.systmpdir, ticket.to_filename)
+
+File.write(path, ticket.to_ical)
+
+puts ticket.to_formatted_s
+puts
+puts "Event saved to #{path}"
+
+find_executable 'open' && `open #{path}`
