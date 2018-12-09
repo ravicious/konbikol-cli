@@ -1,0 +1,72 @@
+              "PKP Intercity"          BILET INTERNETOWY                          NORMAL. : 1
+              Spółka Akcyjna                                            OF: 1     ULG. :   X : X
+
+Przewoźnik: PKP IC
+                                       E-Wcześniej: 1xNormal
+
+
+
+
+ ¦ ¸         Od/From                             Do/To                             ¦ ¸         KL./CL.
+
+ 24.12 14:22 Foo                                 Bar Baz                          24.12 16:20    2
+  *      *   *                                   *                                  *     *      *
+PRZEZ: Radom * Elbląg
+
+
+
+                                                                                  SUMA PLN: 69,00 zł
+
+xxxxxxxxxxxx                                  Nr transakcji:        xxxxxxxxxxx            (xxx) xxxx
+
+Informacje o podróży:
+Stacja             Data Godzina     /Wagon   Km   Nr miejsca (o-okno ś-środek k-korytarz) Suma PLN
+
+Foo                24.12  14:22   TLK 13377 123   12 o                                      69,00 zł
+Bar Baz            24.12  16:20      13           1 m. do siedzenia; wagon z przedziałami
+
+
+
+
+
+
+
+Informacja o cenie     PTU   Suma PLN Płatność: przelewem
+Opłata za przejazd:     8%      69,00 Zapłacono i wystawiono dnia:                                 xxx
+                                       2018-12-09 20:12:29(11111111)
+
+
+
+Ogółem PLN:                     69,00
+
+
+
+
+
+Bilet internetowy jest biletem imiennym i jest ważny:
+a) wraz z dokumentem ze zdjęciem potwierdzającym tożsamość Podróżnego,
+b) tylko w dniu, relacji, pociągu, wagonie i na miejsce na nim oznaczone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Zwrotu należności za niewykorzystany bilet dokonuje się na podstawie wniosku
+złożonego przez płatnika w wyznaczonych przez 'PKP Intercity' S.A. punktach, z
+wyjątkiem należności zwracanych automatycznie na zasadach określonych w
+Regulaminie e-IC.                                                        13377
+
+Niniejszy bilet internetowy nie jest fakturą VAT.
+
+
+dokładne sprawdzanie rozkładu jazdy pociągów przed podróżą., uprzejmie prosimy o
+Data wydruku: 2018-12-09 20:24:25

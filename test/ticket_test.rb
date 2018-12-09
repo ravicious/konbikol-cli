@@ -18,6 +18,14 @@ class Konbikol::TicketTest < Minitest::Test
     assert_equal sanitize_ical(expected_ical), sanitize_ical(actual_ical)
   end
 
+  def test_that_ticket_3_is_parsed_correctly
+    ticket_text = File.read('test/tickets_for_tests/ticket_3.txt')
+    expected_ical = File.read('test/tickets_for_tests/ticket_3.ics')
+    actual_ical = Konbikol::Ticket.new(ticket_text).to_ical
+
+    assert_equal sanitize_ical(expected_ical), sanitize_ical(actual_ical)
+  end
+
   private
 
   DYNAMIC_LINES = %w(DTSTAMP UID)

@@ -126,12 +126,30 @@ module Konbikol
       return @departure if @departure
       line = ticket_text.lines[departure_line_index].split(/\s{2,}/)
 
+      raw_train = line[3]
+      train = raw_train.split(' ').first(2).join(' ')
+
+      # If everything's fine, the departure line should look somewhat like this:
+      #
+      #     Foo                22.12  13:08   TLK 1111  123   25 o              48,00 zł
+      #
+      # But sometimes the train ID is too long and there's just one space between the train column
+      # and the distance column:
+      #
+      #     Foo                22.12  13:08   TLK 11111 123   25 o              48,00 zł
+      #                                                ^ here
+      #
+      # This causes troubles for us because we assume that there are at least two spaces between
+      # columns, so we have to accommodate for that.
+      is_there_just_one_space_between_train_and_distance = raw_train.split(' ').size != 2
+      seat = is_there_just_one_space_between_train_and_distance ? line[4] : line[5]
+
       @departure = {
         station: line[0],
         date: line[1],
         time: line[2],
-        train: line[3],
-        seat: line[5],
+        train: train,
+        seat: seat,
       }
     end
 
