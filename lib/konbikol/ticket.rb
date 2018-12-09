@@ -50,12 +50,12 @@ module Konbikol
     end
 
     def departure_time
-      departure_line[2]
+      departure.fetch(:time)
     end
 
     # The format is `dd.mm` E.g. `23.04`.
     def departure_date
-      departure_line[1]
+      departure.fetch(:date)
     end
 
     def departure_datetime
@@ -72,15 +72,15 @@ module Konbikol
     end
 
     def departure_station
-      departure_line[0]
+      departure.fetch(:station)
     end
 
     def arrival_time
-      arrival_line[2]
+      arrival.fetch(:time)
     end
 
     def arrival_date
-      arrival_line[1]
+      arrival.fetch(:date)
     end
 
     def arrival_datetime
@@ -97,19 +97,19 @@ module Konbikol
     end
 
     def arrival_station
-      arrival_line[0]
+      arrival.fetch(:station)
     end
 
     def carriage
-      arrival_line[3]
+      arrival.fetch(:carriage)
     end
 
     def seat
-      departure_line[5]
+      departure.fetch(:seat)
     end
 
     def train
-      departure_line[3]
+      departure.fetch(:train)
     end
 
     def purchase_time
@@ -122,12 +122,30 @@ module Konbikol
 
     attr_reader :ticket_text
 
-    def departure_line
-      @departure_line ||= ticket_text.lines[departure_line_index].split(/\s{2,}/)
+    def departure
+      return @departure if @departure
+      line = ticket_text.lines[departure_line_index].split(/\s{2,}/)
+
+      @departure = {
+        station: line[0],
+        date: line[1],
+        time: line[2],
+        train: line[3],
+        seat: line[5],
+      }
     end
 
-    def arrival_line
-      @arrival_line ||= ticket_text.lines[departure_line_index + 1].split(/\s{2,}/)
+    def arrival
+      return @arrival if @arrival
+
+      line = ticket_text.lines[departure_line_index + 1].split(/\s{2,}/)
+
+      @arrival = {
+        station: line[0],
+        date: line[1],
+        time: line[2],
+        carriage: line[3],
+      }
     end
 
     def departure_line_index
