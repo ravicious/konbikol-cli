@@ -1,0 +1,71 @@
+              "PKP Intercity"         BILET INTERNETOWY                         NORMAL. : 1
+              Spółka Akcyjna                                           OF: 1    ULG. :   X : X
+
+Przewoźnik: PKP IC
+                                     A-Cena bazowa: 1xNormal
+
+
+
+
+ ¦ ¸        Od/From                             Do/To                            ¦ ¸         KL./CL.
+
+ 01.01 12:41 Foo                                Bar                             01.01 16:29    1
+  *      *  *                                   *                                 *      *     *
+PRZEZ: Fizz Buzz Quux             
+
+
+                                                                                SUMA PLN: 23,00 zł
+
+
+111111111111                                 Nr transakcji:       11111111111            (111) 1111
+
+Informacje o podróży:
+Stacja            Data Godzina     /Wagon   Km   Nr miejsca (o-okno ś-środek k-korytarz) Suma PLN
+Foo               01.01  12:41    IC 2312  666   11 o                                     23,00 zł
+Bar               01.01  16:29       1           1 m. do siedzenia; miejsce przy stoliku
+
+
+Bilet uprawnia w dniu ważności do przejazdu do st. Kraków Gł./Pł.. W poc. PKP IC (oprócz EIP),
+wybranymi tramwajami ZIKiT bez dodatkowych opłat – spr. na intercity.plrPodróżny: xxxxxxx fffff
+
+
+
+
+Informacja o cenie     PTU   Suma PLN Płatność: przelewem
+Opłata za przejazd:    8%       23,00 Zapłacono i wystawiono dnia:                               123
+                                      2018-12-27 12:22:55(11111111)
+
+
+Ogółem PLN:                     23,00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                     1232
+
+
+
+
+
+
+Data wydruku: 2018-12-27 13:22:30
