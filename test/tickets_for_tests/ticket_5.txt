@@ -1,0 +1,72 @@
+              "PKP Intercity"          BILET INTERNETOWY                           NORMAL. : 2
+              Spółka Akcyjna                                             OF: 1     ULG. :   X : X
+
+Przewoźnik: PKP IC
+                                         C-Wcześniej: 2xNormal
+
+
+
+
+ ¦ ¸         Od/From                              Do/To                             ¦ ¸          KL./CL.
+
+ 01.02 12:34 Foo                                  Bar                               01.02 14:56    2
+   *     *   *                                    *                                   *     *      *
+PRZEZ: Fizz  * Buzz Quux     
+
+
+
+                                                                                   SUMA PLN: 89,00 zł
+
+111111111111                                  Nr biletu : 11111111111                       (111) 1111
+
+Informacje o podróży:
+Stacja             Data  Godzina     /Wagon   Km   Nr miejsca (o-okno ś-środek k-korytarz)    Suma PLN
+
+Foo                01.02  12:34   TLK 12345  666   12 o, 13 o                                89,00 zł
+Bar                01.02  14:56       11           2 m. do siedzenia; wagon bez przedziałów
+
+
+Bilet uprawnia w dniu ważności do przejazdu do st. Kraków Gł./Pł. W poc. Pr9IIC (oprócz EIP),
+wybranymi tramwajami ZTP bez dodatkowych opłat – spr. na intercity.pl       Podróżny: xxxxx fffffff
+
+
+
+Informacja o cenie     PTU    Suma PLN  Płatność: przelewem
+Opłata za przejazd:     8%       89,00 Zapłacono i wystawiono dnia:                                  111
+                                        2019-01-09 12:39:45(11111111)
+
+
+
+Ogółem PLN:                      89,00
+
+
+
+
+
+Bilet internetowy jest biletem imiennym i jest ważny:
+a) wraz z dokumentem ze zdjęciem potwierdzającym tożsamość Podróżnego,
+b) tylko w dniu, relacji, pociągu, wagonie i na miejsce na nim oznaczone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Zwrotu należności za niewykorzystany bilet dokonuje się na podstawie wniosku
+złożonego przez płatnika w wyznaczonych przez 'PKP Intercity' S.A. punktach, z
+wyjątkiem należności zwracanych automatycznie na zasadach określonych w
+Regulaminie e-IC.                                                       12345
+Niniejszy bilet internetowy nie jest fakturą VAT.
+
+W związku z przeprowadzanymi modernizacjami sieci kolejowej, uprzejmie prosimy o
+dokładne sprawdzanie rozkładu jazdy pociągów przed podróżą.
+
+Data wydruku: 2019-01-09 13:52:23

@@ -170,7 +170,7 @@ module Konbikol
       return @departure_line_index if @departure_line_index
 
       lines_with_index = ticket_text.lines.each_with_index
-      header_line_index = lines_with_index.find { |line, _| line =~ /Stacja\s+Data Godzina/ }.last
+      header_line_index = lines_with_index.find { |line, _| line =~ /Stacja\s+Data\s+Godzina/ }.last
 
       # Find the next line after the header line that's not empty.
       @departure_line_index = lines_with_index.to_a
