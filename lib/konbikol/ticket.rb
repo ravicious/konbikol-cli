@@ -113,8 +113,12 @@ module Konbikol
     end
 
     def purchase_time
+      return @purchase_time if @purchase_time
+
+      line = find_next_non_empty_line_below_line_matching_regex(/Zapłacono i wystawiono dnia/)
+
       @purchase_time ||= Time.parse(
-        ticket_text.lines[35].split(/\s{2,}/).last.match(/(.+)\(.+/)[1]
+        line.split(/\s{2,}/).last.match(/(.+)\(.+/)[1]
       )
     end
 
@@ -167,16 +171,23 @@ module Konbikol
     end
 
     def departure_line_index
-      return @departure_line_index if @departure_line_index
+      @departure_line_index ||= find_index_of_next_non_empty_line_below_line_matching_regex(/Stacja\s+Data\s+Godzina/)
+    end
 
+    def find_index_of_next_non_empty_line_below_line_matching_regex(regex)
       lines_with_index = ticket_text.lines.each_with_index
-      header_line_index = lines_with_index.find { |line, _| line =~ /Stacja\s+Data\s+Godzina/ }.last
+      index_of_line_matching_regex = lines_with_index.find { |line, _| line =~ regex }.last
 
-      # Find the next line after the header line that's not empty.
-      @departure_line_index = lines_with_index.to_a
-        .slice(header_line_index + 1, lines_with_index.size)
+      # Find the next line after the matching line that's not empty.
+      lines_with_index.to_a
+        .slice(index_of_line_matching_regex + 1, lines_with_index.size)
         .find { |line, _| !line.strip.empty? }
         .last
+    end
+
+    def find_next_non_empty_line_below_line_matching_regex(regex)
+      index = find_index_of_next_non_empty_line_below_line_matching_regex(regex)
+      ticket_text.lines[index]
     end
   end
 end

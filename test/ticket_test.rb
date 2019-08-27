@@ -2,6 +2,17 @@ require "test_helper"
 require "konbikol/ticket"
 
 class Konbikol::TicketTest < Minitest::Test
+  def test_that_purchase_time_is_based_on_line_search
+    ticket_text = <<~TICKET
+    Zapłacono i wystawiono dnia
+                                           2019-08-27 21:15:52(11111111)
+    TICKET
+    ticket = Konbikol::Ticket.new(ticket_text)
+
+    expected_time = Time.parse('2019-08-27 21:15:52')
+    assert_equal expected_time, ticket.purchase_time
+  end
+
   def test_that_ticket_1_is_parsed_correctly
     ticket_text = File.read('test/tickets_for_tests/ticket_1.txt')
     expected_ical = File.read('test/tickets_for_tests/ticket_1.ics')
