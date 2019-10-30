@@ -126,11 +126,25 @@ module Konbikol
 
     attr_reader :ticket_text
 
+    STATION_AND_REST_REGEX = /^(?<station>\D+(\b|\.))\s+(?<rest>\d.+)$/
+
     def departure
       return @departure if @departure
-      line = ticket_text.lines[departure_line_index].split(/\s{2,}/)
 
-      raw_train = line[3]
+      departure_line = ticket_text.lines[departure_line_index]
+
+      match_result = departure_line.match(STATION_AND_REST_REGEX)
+      unless match_result
+        raise "Departure line didn't match the regex to detect the station and the rest of columns, " \
+          "here's how the line looks like:\n\n#{departure_line}"
+      end
+
+      station = match_result[:station]
+      rest = match_result[:rest]
+
+      rest_columns = rest.split(/\s{2,}/)
+
+      raw_train = rest_columns[2]
       train = raw_train.split(' ').first(2).join(' ')
 
       # If everything's fine, the departure line should look somewhat like this:
@@ -146,12 +160,12 @@ module Konbikol
       # This causes troubles for us because we assume that there are at least two spaces between
       # columns, so we have to accommodate for that.
       is_there_just_one_space_between_train_and_distance = raw_train.split(' ').size != 2
-      seat = is_there_just_one_space_between_train_and_distance ? line[4] : line[5]
+      seat = is_there_just_one_space_between_train_and_distance ? rest_columns[3] : rest_columns[4]
 
       @departure = {
-        station: line[0],
-        date: line[1],
-        time: line[2],
+        station: station,
+        date: rest_columns[0],
+        time: rest_columns[1],
         train: train,
         seat: seat,
       }
@@ -160,13 +174,23 @@ module Konbikol
     def arrival
       return @arrival if @arrival
 
-      line = ticket_text.lines[departure_line_index + 1].split(/\s{2,}/)
+      arrival_line = ticket_text.lines[departure_line_index + 1]
+      match_result = arrival_line.match(STATION_AND_REST_REGEX)
+      unless match_result
+        raise "Arrival line didn't match the regex to detect the station and the rest of columns, " \
+          "here's how the line looks like:\n\n#{arrival_line}"
+      end
+
+      station = match_result[:station]
+      rest = match_result[:rest]
+
+      rest_columns = rest.split(/\s{2,}/)
 
       @arrival = {
-        station: line[0],
-        date: line[1],
-        time: line[2],
-        carriage: line[3],
+        station: station,
+        date: rest_columns[0],
+        time: rest_columns[1],
+        carriage: rest_columns[2],
       }
     end
 
