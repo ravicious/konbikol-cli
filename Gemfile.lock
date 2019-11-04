@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    konbikol (0.1.5)
+    konbikol (0.1.6)
       icalendar (~> 2.5.1)
       pdf-reader (~> 2.1.0)
       tzinfo (~> 1.2.5)
@@ -13,7 +13,7 @@ GEM
     Ascii85 (1.0.3)
     afm (0.2.2)
     hashery (2.1.2)
-    icalendar (2.5.1)
+    icalendar (2.5.3)
       ice_cube (~> 0.16)
     ice_cube (0.16.3)
     minitest (5.11.3)
@@ -41,4 +41,4 @@ DEPENDENCIES
   rake (~> 10.0)
 
 BUNDLED WITH
-   1.17.1
+   1.17.2
