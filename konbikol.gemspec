@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Converts Polish train tickets to iCalendar events."
   spec.description   = spec.summary
-  spec.homepage      = "https://github.com/ravicious/konbikol"
+  spec.homepage      = "https://github.com/ravicious/konbikol-cli"
   spec.license       = "GPL-3.0-or-later"
 
   if spec.respond_to?(:metadata)
